@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: adokhnia <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/12 13:48:17 by adokhnia          #+#    #+#             */
+/*   Updated: 2023/06/12 13:48:18 by adokhnia         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int	temp;
@@ -8,7 +20,7 @@ void	ft_rev_int_tab(int *tab, int size)
 	{
 		temp = tab[iter];
 		tab[iter] = tab[size - iter - 1];
-		tab[iter] = temp;
+		tab[size - iter - 1] = temp;
 		iter++;
 	}
 }
